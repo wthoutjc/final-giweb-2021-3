@@ -1,0 +1,129 @@
+.main{
+    width: 95vw;
+    margin: 25px auto;
+    background-color: rgba(134, 134, 134, 0.075);
+    padding: 25px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    z-index: 10001;
+}
+
+.card{
+    margin: 10px;
+    transition: all 0.4s;
+}
+
+.card:hover{
+    box-shadow: 2px 2px 15px 2.5px rgb(68, 68, 68);
+    filter: brightness(0.7);
+    transform: scale(1.001);
+}
+
+.card:nth-child(1), .card:nth-child(6n-1), .card:nth-child(6n+1){
+    grid-column-end: span 1;
+    grid-row-end: span 2;
+}
+
+.card-img-top{
+    height: 80%;
+    object-fit: contain;
+    background-color: rgba(255, 0, 0, 0.205);
+}
+
+.btn-primary{
+    background-color:red;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 30px;
+}
+
+.btn-primary:focus{
+    background-color: red;
+}
+
+.btn-primary:hover{
+    background-color: red;
+}
+
+.d-flex{
+    margin-right: 300px;
+}
+
+.form-control{
+    border-radius: 30px;
+    width: 900px;
+}
+
+.navbar-brand{
+    filter: drop-shadow(rgb(255, 0, 0));
+}
+
+@media (max-width:900px){
+    .main{
+        background-color:rgba(165, 164, 164, 0.356);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:500px){
+    .main{
+        background-color:rgba(190, 15, 15, 0.356);
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.a{
+    margin-right: 100px;
+}
+
+.nav-link:focus{
+    background-color: black;
+    border-radius: 45%;
+    color: white !important;
+    margin: 0 5px;
+}
+
+.btnAddQ{
+    font-weight: bold;
+    font-size: 40px;
+    position: fixed;
+    z-index: 1000;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btnAddQ>div{
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    transition: all 0.4s;
+    border: 1px solid rgb(85, 85, 85);
+}
+
+.btnAddQ>div:hover{
+    box-shadow: 2px 2px 15px 2.5px rgb(68, 68, 68);
+    filter: brightness(0.7);
+    transform: scale(1.001);
+}
+
+.btnAddQ>div>p{
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    line-height: fit-content;
+}

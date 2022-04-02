@@ -1,0 +1,170 @@
+.sobremi {
+    width: 100%;
+    color: white;
+  }
+  .sobremi .intro-to-me {
+    height: 600px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sobremi .intro-to-me > img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    filter: brightness(30%);
+    object-fit: cover;
+  }
+  .sobremi .intro-to-me .quiensoy {
+    width: 40%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    box-sizing: border-box;
+    justify-content: center;
+    border-radius: 1em;
+    text-align: justify;
+  }
+  .sobremi .intro-to-me .contacto > h1,
+  .sobremi .intro-to-me .contacto > h2,
+  .sobremi .intro-to-me .quiensoy > h2,
+  .sobremi .intro-to-me .quiensoy > h1 {
+    margin-bottom: 0.5em;
+  }
+  .sobremi .intro-to-me .contacto > h1 {
+      margin-bottom: 0.8em;
+      font-size: 130%;
+  }
+  .sobremi .intro-to-me .contacto > h2 {
+      font-size: 100%;
+  }
+  .sobremi .intro-to-me .contacto {
+    width: 40%;
+    height: 80%;
+    backdrop-filter: blur(13px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 1em;
+  }
+  .sobremi .intro-to-me .contacto > img {
+      width: 40%;
+      margin-bottom: 0.9em;
+  }
+  .unknowledge {
+    height: 400px;
+    display: grid;
+    grid-template-rows: 17% 83%;
+    background-color: var(--color-negroMate);
+  }
+  .ilike .il-title,
+  .unknowledge .u-title {
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+  }
+  .unknowledge .cards {
+    display: flex;
+    padding: 1em;
+    justify-content: space-evenly;
+  }
+  .unknowledge .cards > div {
+    overflow: auto;
+    text-align: justify;
+    width: 30%;
+    border: 1px solid white;
+    border-radius: 1em;
+    box-sizing: border-box;
+    padding: 1em;
+  }
+  .unknowledge .cards div > h1 {
+    font-size: 120%;
+    margin-bottom: 1.5em;
+  }
+  .unknowledge .cards div li {
+    list-style-type: square;
+    margin-bottom: 1em;
+  }
+  .ilike {
+    background-color: var(--color-azulMateHover);
+    padding: 1em;
+    box-sizing: border-box;
+  }
+  .ilike .cards {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .ilike .cards > div {
+    width: 40%;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 1em;
+  }
+  .ilike .cards div > h1 {
+    margin-bottom: 1em;
+  }
+  .ilike .cards div > a {
+    color: white;
+    text-decoration: none;
+  }
+  @media all and (max-width: 649px) {
+      .sobremi .intro-to-me {
+          display: flex;
+          flex-direction: column;
+          height: 700px;
+      }
+      .sobremi .intro-to-me > img {
+          display: none;
+      }
+      .sobremi .intro-to-me .quiensoy {
+          width: 100%;
+          height: 40%;
+          background-color: var(--color-negroMate);
+          position: relative;
+          border-radius: 0;
+      }
+      .sobremi .intro-to-me .contacto {
+          width: 100%;
+          height: 60%;
+          background-color:var(--color-azulMateHover);
+      }
+      .unknowledge {
+          display: flex;
+          flex-direction: column;
+          height: 700px;
+      }
+      .ilike .il-title> h1,
+      .unknowledge .u-title > h1 {
+          font-size: 110%;
+      }
+      .unknowledge .cards {
+          display: flex;
+          flex-direction: column;
+          padding: 0.3em;
+      }
+      .unknowledge .cards > div {
+          width: 100%;
+          margin-bottom: 1em;
+      }
+      .ilike{
+          display: flex;
+          flex-direction: column;
+          height: 400px;
+      }
+      .ilike .cards {
+          display: flex;
+          flex-direction: column;
+      }
+      .ilike .cards > div {
+          width: 100%;
+          box-sizing: border-box;
+          margin-bottom: 1.5em;
+      }
+  }
